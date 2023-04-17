@@ -1,24 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Login from "./componentes/Login.jsx"
+import Pagina from "./componentes/Pagina.jsx"
+import Navbar from './componentes/Navbar';
+import Barra from './componentes/Barra.jsx'
+import Footer from './componentes/Footer';
+import Blog from './componentes/Blog.jsx';
+import Contact from './componentes/Contact';
+import AboutUs from './componentes/AboutUs';
+import RegisterForm from './componentes/RegisterForm';
+import Dashboard from './componentes/Dashboard';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Inicio from "./Principal/Inicio.jsx";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    {/* <Navbar/>
+    <Pagina/>
+    <main className="bg-blue-400 h-full">
+    <Footer/>
+    </main> */}
+    {/* <main className="h-screen w-screen flex justify-center items-center bg-indigo-100">
+      <Login/>
+    </main> */}
+    {/* <AboutUs/> */}
+    {/* <Contact/> */}
+    {/* <RegisterForm/> */}
+    {/* <Dashboard/> */}
+    <Navbar/>
+      <Routes>
+        <Route path="/blog" element={<Blog/>} / >
+        <Route path="/aboutUs" element={<AboutUs/>} />
+        <Route path="/contactUs" element={<Contact/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/register" element={<RegisterForm/>} />
+      </Routes>
+    <Pagina/>
+    <main className="bg-blue-400 h-full">
+    <Footer/>
+    </main>
+    {/* <Dashboard/> */}
+    {/* <Inicio/>
+    <Routes>
+          <Route path="/blog" element={<Blog/>}/>
+          <Route path="/aboutUs" element={<AboutUs/>} />
+          <Route path="/contactUs" element={<Contact/>} />
+        </Routes> */}
     </div>
+  </div>
   );
 }
 
