@@ -12,6 +12,7 @@ import {BsCreditCard2Front} from "react-icons/bs"
 import {BsQuestionCircle} from "react-icons/bs"
 import {CiLogout} from "react-icons/ci"
 
+
 const SideBar = () => {
   return (
     <div className="sideBar grid">
@@ -29,16 +30,16 @@ const SideBar = () => {
             <a href="#" className="menuLink flex">
               <IoMdSpeedometer className="icon"/>
               <span className="smallText">
-                Dash Board
+                DashBoard
               </span>
             </a>
           </li>
 
           <li className="listItem">
-            <a href="#" className="menuLink flex">
+            <a href="./dashboard/desechos" className="menuLink flex">
               <MdDeliveryDining className="icon"/>
               <span className="smallText">
-                My Orders
+                Desechos
               </span>
             </a>
           </li>

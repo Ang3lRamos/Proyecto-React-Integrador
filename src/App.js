@@ -12,7 +12,7 @@ import Dashboard from "../src/componentes/Dashboard/Dasboard.jsx"
 import Dash from "./componentes/Dash"
 import { Routes, Route, createBrowserRouter, RouterProvider, BrowserRouter } from 'react-router-dom';
 import Inicio from "./Principal/Inicio.jsx";
-
+import Desechos from "./componentes/Desechos"
 function App() {
   return (
     <div className="App">
@@ -36,6 +36,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
         <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/desechos" element={<Desechos/>} />
         {/* <Route path="/dash" element={<Dash/>}/> */}
       </Routes>
     <Pagina/>
