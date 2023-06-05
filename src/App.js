@@ -35,6 +35,7 @@ function App() {
         <Route path="/contactUs" element={<Contact/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
+        <Route path="/dashboard" element={<Dashboard/>}/>
       </Routes>
     <Pagina/>
     <main className="bg-blue-400 h-full">
