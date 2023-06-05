@@ -101,12 +101,12 @@ function Navbar() {
                 Sign In
               </button>
             </a>
-            <Link to="/register">
+            <a href="/register">
               <button className="ml-4 bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium
               hover:bg-gray-700 hover:text-white">
                 Sign Up
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -122,30 +122,30 @@ function Navbar() {
                   alt="Workflow"
                 />
               </div>
-              <Link
-                to="/"
+              <a
+                href="/"
                 className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Home
-              </Link>
-              <Link
-                to="/blog"
+              </a>
+              <a
+                href="/blog"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Blog
-              </Link>
-              <Link
-                to="/aboutUs"
+              </a>
+              <a
+                href="/aboutUs"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                  About Us
-              </Link>
-              <Link
-                to="/contactUs"
+              </a>
+              <a
+                href="/contactUs"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Contact Us
-              </Link> 
+              </a> 
           </div>
           </div>
       )}

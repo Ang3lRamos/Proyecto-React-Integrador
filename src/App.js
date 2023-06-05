@@ -1,5 +1,6 @@
 import './App.css';
-import Login from "./componentes/Login.jsx"
+import Login from "../src/componentes/Login/Login"
+import Register from "../src/componentes/Register/Register"
 import Pagina from "./componentes/Pagina.jsx"
 import Navbar from './componentes/Navbar';
 import Barra from './componentes/Barra.jsx'
@@ -7,10 +8,10 @@ import Footer from './componentes/Footer';
 import Blog from './componentes/Blog.jsx';
 import Contact from './componentes/Contact';
 import AboutUs from './componentes/AboutUs';
-import RegisterForm from './componentes/RegisterForm';
-import Dashboard from './componentes/Dashboard';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Dashboard from "../src/componentes/Dashboard/Dasboard.jsx"
+import { Routes, Route, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Inicio from "./Principal/Inicio.jsx";
+
 function App() {
   return (
     <div className="App">
@@ -33,7 +34,7 @@ function App() {
         <Route path="/aboutUs" element={<AboutUs/>} />
         <Route path="/contactUs" element={<Contact/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<RegisterForm/>} />
+        <Route path="/register" element={<Register/>} />
       </Routes>
     <Pagina/>
     <main className="bg-blue-400 h-full">

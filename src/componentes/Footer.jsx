@@ -5,12 +5,6 @@ const Footer = () => {
     
 <footer className="p-4 bg-white sm:p-6 dark:bg-gray-900 space-x-2 rounded-lg">
     <div className="md:flex md:justify-between">
-        <div className="mb-6 md:mb-0">
-            <a href="#" className="flex items-center">
-                <img src={imagen} className="h-8 mr-3" alt="img" />
-             
-            </a>
-        </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
